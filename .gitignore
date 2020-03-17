@@ -1,0 +1,22 @@
+.DS_Store
+node_modules/
+/dist/
+/zptx/
+zptx-aks.rar
+zptx-aks.zip
+zptx-bz.rar
+zptx-bz.zip
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+zptx.zip
+dist-aks.rar
+peacock/zptx/

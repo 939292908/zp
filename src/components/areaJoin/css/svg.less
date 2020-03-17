@@ -1,0 +1,77 @@
+circle,image,g[type="node"]>text,text.tagnums,g.more,g.more text{cursor:pointer;}
+text{font-family:sans-serif;font-size:10px;fill:#9A9A9A;}
+.links line{stroke-opacity:0.6;}
+#rMenu{position:absolute;width:160px;background:#e8eaec;box-shadow:#ccc 0px 0px 8px}
+#rMenu ul{padding:0;margin:0;}
+#rMenu ul li{color:#333;font-size:14px;height:34px;line-height:34px;width:100%;padding-left:5%;list-style-type:none;cursor:pointer;}
+#rMenu ul li:hover{background:#e5e5e5;}
+.svgNT{position:fixed;bottom:30px;left:323px;border:2px solid #ccc;display:none;}
+.arc{cursor:pointer;}
+
+
+
+div .diyFun{cursor: pointer; color: blue; text-decoration: underline; font-size: 12px;}
+g.more{display: block}
+g.nomore{display: none}
+.scrollbar::-webkit-scrollbar{width:6px;height:6px;}
+.scrollbar::-webkit-scrollbar-track{border-radius:5px;background:none;}
+.scrollbar::-webkit-scrollbar-thumb{background-color:rgba(32,76,157,1);border-radius:5px;}
+.scrollbar::-webkit-scrollbar-thumb:hover{background-color:rgba(45,183,245,1);}
+.scrollbar::-webkit-scrollbar-corner{background-color:#dadada;}
+#hydra{
+  position: relative;
+  .tlist{
+    position:absolute;
+    left:10px;
+    top:88px;
+    z-index:999;
+    background: #fff;
+    -webkit-box-shadow: #ccc 0px 0px 8px;
+    box-shadow: #ccc 0px 0px 8px;
+    padding:0 10px;
+    max-height:350px;
+    overflow-y:auto;
+    ul{
+       padding:5px !important;
+      li{
+        width: calc(~'100% + 10px');
+        color: #333;
+        font-size: 14px;
+        height: 34px;
+        line-height: 34px;
+        width: 100%;
+        padding-left: 5%;
+        list-style-type: none;
+        white-space:nowrap;
+        cursor: pointer;
+        padding: 0 5px;
+      }
+      li:hover{
+        background: #e5e5e5;
+      }
+    }
+  }
+  .panel{
+    position:absolute;
+    left:10px;
+    top:88px;
+    z-index:999;
+    font-size:16px;
+    background: #fff;
+    -webkit-box-shadow: #ccc 0px 0px 8px;
+    box-shadow: #ccc 0px 0px 8px;
+    padding:10px;
+    max-width:600px;
+    max-height:450px;
+    overflow-y:auto;
+    overflow-x:hidden;
+  }
+  .titleBox{
+    position:absolute;
+    z-index:999;
+    background:#fff;
+    box-shadow: #ccc 0px 0px 8px;
+    padding:5px;
+    font-size:16px;
+  }
+}

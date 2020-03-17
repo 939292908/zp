@@ -1,0 +1,44 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: docker-bzitapv1-ingress
+  name: docker-bzitapv1-ingress
+spec:
+  ports:
+    - port: 80
+  selector:
+    app: docker-bzitapv1-ingress
+
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: docker-bzitapv1-ingress
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: docker-bzitapv1-ingress
+    spec:
+      containers:
+        - name: docker-bzitapv1-ingress
+          image: harbor.k8s.landaudev.com/itap-k8s/bzitapv1-k8s
+          ports:
+            - containerPort: 8080
+
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: docker-bzitapv1-ingress
+spec:
+  rules:
+    - host: bzitapv1.k8s.landaudev.com
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: docker-bzitapv1-ingress
+              servicePort: 80

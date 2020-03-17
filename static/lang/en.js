@@ -1,0 +1,76 @@
+module.exports={
+  message: {
+    projName : 'iTap 4.0 Login',
+    login : {
+      loginbtn : 'Login',
+      pkilogin : 'PKI login',
+      facelogin : 'Face login',
+      fingerprintlogin : 'Fingerprint login'
+    },
+    index : {
+    	searchName : 'Search',
+      historyRecord : 'history record',
+      personal : 'personal',
+      message : 'message',
+      application : 'application',
+      upload : 'Click Upload file or drag the file directly here',
+      usingHelp : 'Using help',
+      commonProblem : 'common problem',
+      feedback : 'Feedback',
+      signOut : 'sign out',
+      notificationMessage : 'Notification message',
+      updateMessage : 'Update message',
+      feedbackMessage : 'Feedback message',
+      enterKeywordSearch : 'Enter keyword search',
+      fillInTheFeedback : 'Fill in the feedback',
+      problem : 'problem',
+      submitAQuestion : 'Submit a question',
+      feedbackProblem : 'Feedback problem',
+      pleaseEnterKeyword : 'Please enter a query keyword',
+      withinWords : 'Within 400 words',
+    },
+    relation : {
+      home : 'Home',
+      searchResult : 'search result',
+      filterCondition : 'Filter condition',
+      operatingFunction : 'Operating function',
+      entityPrimaryKey: 'Entity primary key',
+      entityType: 'Entity type',
+      relationship: 'relationship',
+      entity: 'entity',
+      edit: 'edit',
+      viewFile : 'View file',
+      mapAnalysis : 'Map analysis',
+      viewDetails : 'View details',
+      details : {
+        labelInformation : 'Label Information',
+        editTag : 'Edit tag',
+        basicInformation : 'Basic Information',
+        trackInformation : 'Track information',
+        correlationAnalysis : 'Correlation Analysis'
+      },
+      photos : 'photos',
+      all : 'All',
+      function : {
+        addEntity : 'Add entity',
+        addRelationship : 'Add relationship',
+        deleteEntity : 'Delete entity',
+        undoDelete : 'Undo delete',
+        inverseSelection : 'Inverse selection',
+        selectAll : 'select all',
+        lockedEntity : 'Locked entity',
+        defaultLayout : 'Default layout',
+        unlockEntity : 'Unlock entity',
+        windowAdaptation : 'Window adaptation',
+        keyNodeHighlight : 'Key node highlight',
+        selectBothEnds : 'Select both ends',
+        selectTheOppositeEnd : 'Select the opposite end',
+        selectLinkRelationship : 'Select link relationship',
+        searchFor : 'search for',
+        saveGraphics : 'Save graphics',
+        saveAsImage : 'Save as image',
+        openHistoricalGraphics : 'Open historical graphics'
+      }
+    }
+  }
+}

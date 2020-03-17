@@ -1,0 +1,27 @@
+ /deep/ .anchorBL img {
+  display: none;
+}
+ /deep/ .BMap_cpyCtrl.BMap_noprint.anchorBL {
+  display: none;
+}
+ /deep/ .BMap_contextMenu {
+  width: 160px;
+  background: #fff;
+  -webkit-box-shadow: #ccc 0px 0px 8px;
+  box-shadow: #ccc 0px 0px 8px;
+  z-index: 1001;
+}
+ /deep/ .BMap_contextMenu div {
+  color: #333;
+  font-size: 14px;
+  height: 34px;
+  line-height: 30px;
+  width: 100%;
+  padding-left: 5%;
+  list-style-type: none;
+  cursor: pointer;
+  line-height: 30px !important;
+}
+ /deep/ .BMap_contextMenu:hover {
+  background: #e5e5e5;
+}

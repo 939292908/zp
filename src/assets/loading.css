@@ -1,0 +1,265 @@
+/* 地图------loading */
+  .loader-map {
+      /* background: #000;
+      background: radial-gradient(#222, #000); */
+      bottom: 32%;
+      left: 0;
+      overflow: hidden;
+      position: absolute;
+      right: 0;
+      top: 105px;
+      z-index: 99999;
+  }
+
+  .loader-inner {
+      bottom: 0;
+      height: 60px;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100px;
+  }
+
+  .loader-line-wrap {
+      -webkit-animation: 
+      spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
+    ;
+              animation: 
+      spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
+    ;
+      box-sizing: border-box;
+      height: 50px;
+      left: 0;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      width: 100px;
+  }
+  .loader-line {
+      border: 4px solid transparent;
+      border-radius: 100%;
+      box-sizing: border-box;
+      height: 100px;
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100px;
+  }
+  .loader-line-wrap:nth-child(1) { -webkit-animation-delay: -50ms; animation-delay: -50ms; }
+  .loader-line-wrap:nth-child(2) { -webkit-animation-delay: -100ms; animation-delay: -100ms; }
+  .loader-line-wrap:nth-child(3) { -webkit-animation-delay: -150ms; animation-delay: -150ms; }
+  .loader-line-wrap:nth-child(4) { -webkit-animation-delay: -200ms; animation-delay: -200ms; }
+  .loader-line-wrap:nth-child(5) { -webkit-animation-delay: -250ms; animation-delay: -250ms; }
+
+  .loader-line-wrap:nth-child(1) .loader-line {
+      border-color: hsl(0, 80%, 60%);
+      height: 90px;
+      width: 90px;
+      top: 7px;
+  }
+  .loader-line-wrap:nth-child(2) .loader-line {
+      border-color: hsl(60, 80%, 60%);
+      height: 76px;
+      width: 76px;
+      top: 14px;
+  }
+  .loader-line-wrap:nth-child(3) .loader-line {
+      border-color: hsl(120, 80%, 60%);
+      height: 62px;
+      width: 62px;
+      top: 21px;
+  }
+  .loader-line-wrap:nth-child(4) .loader-line {
+      border-color: hsl(180, 80%, 60%);
+      height: 48px;
+      width: 48px;
+      top: 28px;
+  }
+  .loader-line-wrap:nth-child(5) .loader-line {
+      border-color: hsl(240, 80%, 60%);
+      height: 34px;
+      width: 34px;
+      top: 35px;
+  }
+
+  @-webkit-keyframes spin {
+      0%, 15% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+      0%, 15% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+
+  /* 户籍人口家谱图谱 */
+  .loader-HJRK {
+    width: 100px;
+    height: 101px;
+    border: 8px solid;
+    border-top-color: hsl(154,100%,31%);
+    border-left-color: hsl(216,87%,52%);
+    border-bottom-color: hsl(8,66%,50%);
+    border-right-color: hsl(42,100%,51%);
+    border-radius: 50%;
+    transform: rotate(45deg);
+    margin: 30px auto;
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+  }
+  .loader-HJRK p{
+    display: inline-block;
+    width: 107px;
+    height: 107px;
+    /* The background is used to specify the border background */
+    background: linear-gradient(90deg, hsla(212,67%,36%,0) 0%,
+                                           hsla(207,69%,51%,0) 76%,
+                                           hsla(0,0%,100%,1) 85%,
+                                           hsla(0,0%,100%,1) 100%); /* W3C */
+    /* Background origin is the padding box by default.
+    Override to make the background cover the border as well. */
+    -moz-background-origin: border;
+    background-origin: border-box;
+    /* A transparent border determines the width */
+    border: 6px solid transparent;
+    border-radius: 50%;
+    box-shadow: inset -999px 0 0 rgba(0,0,0,0); /* The background color */
+    transform: translate(-8px, 55px);
+    animation: loading 1s linear infinite;
+    position: absolute;
+    left: -3px;
+    top: 14px;
+    right: 0;
+    bottom: 0;
+  }
+  
+  @keyframes loading {
+    0% { transform: translate(-9px, -25px) rotate(0deg); }
+    100% { transform: translate(-9px, -25px) rotate(360deg); }
+  }
+
+  /* 获取图谱名称loading */
+  .loading-tpmc{
+    position:absolute;
+    /* width: 200px;
+    height: 200px; */
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    /* margin-left:-100px;
+    margin-top:-100px; */
+  }
+  .loader-tpmc {
+    background: currentcolor;
+    position: relative;
+    -webkit-animation: loader-tpmc 1s ease-in-out infinite;
+    animation: loader-tpmc 1s ease-in-out infinite;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    width: 8px;
+    height: 15px;
+    margin: 200px auto;
+    color: #269cdb;
+  }
+  .loader-tpmc:after,
+  .loader-tpmc:before {
+      content: '';
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      background: inherit;
+      -webkit-animation: inherit;
+      animation: inherit;
+  }
+  .loader-tpmc:before {
+      right: 15px;
+      -webkit-animation-delay: 0.2s;
+      animation-delay: 0.2s;
+  }
+  .loader-tpmc:after {
+      left: 15px;
+      -webkit-animation-delay: 0.6s;
+      animation-delay: 0.6s;
+  }
+  @-webkit-keyframes loader-tpmc {
+      0%, 100% {
+          box-shadow: 0 0 0 currentcolor, 0 0 0 currentcolor;
+      }
+      50% {
+          box-shadow: 0 -8px 0 currentcolor, 0 8px 0 currentcolor;
+      }
+  }
+  @keyframes loader-tpmc {
+      0%, 100% {
+          box-shadow: 0 0 0 currentcolor, 0 0 0 currentcolor;
+      }
+      50% {
+          box-shadow: 0 -8px 0 currentcolor, 0 8px 0 currentcolor;
+      }
+  }
+
+
+
+  /* 获取档案列表loading */
+.archives-loading{
+    width: 80px;
+    height: 40px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-40px;
+    margin-top:-20px;
+}
+.archives-loading span{
+    display: inline-block;
+    width: 8px;
+    height: 100%;
+    border-radius: 4px;
+    background: lightgreen;
+    -webkit-animation: load 1s ease infinite;
+}
+@-webkit-keyframes load{
+    0%,100%{
+        height: 40px;
+        background: lightgreen;
+    }
+    50%{
+        height: 70px;
+        margin: -15px 0;
+        background: lightblue;
+    }
+}
+.archives-loading span:nth-child(2){
+    -webkit-animation-delay:0.2s;
+}
+.archives-loading span:nth-child(3){
+    -webkit-animation-delay:0.4s;
+}
+.archives-loading span:nth-child(4){
+    -webkit-animation-delay:0.6s;
+}
+.archives-loading span:nth-child(5){
+    -webkit-animation-delay:0.8s;
+}

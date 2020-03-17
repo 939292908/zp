@@ -1,0 +1,214 @@
+.notice-info {
+  font-size: 14px;
+}
+.notice-info .red {
+  color: #ed4014;
+}
+ /deep/ .svgNT {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  display: none !important;
+  border: 2px solid #ccc;
+}
+ /deep/ .hydra .panel {
+  position: absolute;
+  left: 10px;
+  top: 88px;
+  z-index: 999;
+  font-size: 16px;
+  background: #fff;
+  -webkit-box-shadow: #ccc 0px 0px 8px;
+  box-shadow: #ccc 0px 0px 8px;
+  padding: 10px;
+  max-width: 600px;
+  max-height: 450px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+ /deep/ .ivu-drawer-body {
+  padding: 0;
+}
+.form-map {
+  padding: 12px;
+  height: 100%;
+  overflow-y: auto;
+}
+.card-action {
+  text-align: right;
+  padding-right: 12px;
+}
+ /deep/ #rMenu {
+  position: absolute;
+  width: 160px;
+  background: #fff;
+  box-shadow: #ccc 0px 0px 8px;
+  z-index: 1001;
+}
+ /deep/ #rMenu ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #fff;
+}
+ /deep/ #rMenu ul li {
+  color: #333;
+  font-size: 14px;
+  height: 34px;
+  line-height: 34px;
+  width: 100%;
+  padding-left: 5%;
+  list-style-type: none;
+  cursor: pointer;
+  position: relative;
+}
+ /deep/ #rMenu ul li:hover {
+  background: #e5e5e5;
+}
+ /deep/ #rMenu ul li:hover ul.child-items {
+  display: block;
+}
+ /deep/ #rMenu ul.child-items {
+  position: absolute;
+  width: 345px;
+  display: none;
+  box-shadow: #ccc 0px 0px 8px;
+}
+.loading-bg {
+  z-index: 3;
+}
+.map-collect-work-objective {
+  height: calc(100% - 60px);
+  background: #fff;
+  border-top: 1px solid #e0e3e6;
+  border-right: 1px solid #e0e3e6;
+  border-left: 1px solid #e0e3e6;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.map-collect-work-objective > .title {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  height: 48px;
+  align-items: center;
+  padding-left: 16px;
+  border-bottom: 1px solid #e0e3e6;
+}
+.map-collect-work-objective .modal-content {
+  height: calc(100% - 48px);
+  padding: 15px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+ /deep/ .titleBox {
+  z-index: 999;
+  background: #fff;
+  box-shadow: #ccc 0px 0px 8px;
+  padding: 5px;
+  font-size: 16px;
+}
+ /deep/ .ivu-tabs {
+  height: 100%;
+}
+ /deep/ .ivu-tabs .ivu-tabs-content {
+  height: calc(100% - 48px);
+}
+ /deep/ .ivu-tabs .form-objective-view {
+  height: calc(100% - 15px);
+  overflow-y: auto;
+}
+ /deep/ .longLabel {
+  height: 34px;
+}
+ /deep/ .longLabel label {
+  left: 0px !important;
+}
+#hydra {
+  position: relative;
+}
+#hydra /deep/ .tlist {
+  position: absolute;
+  left: 10px;
+  top: 88px;
+  z-index: 999;
+  background: #fff;
+  -webkit-box-shadow: #ccc 0px 0px 8px;
+  box-shadow: #ccc 0px 0px 8px;
+  padding: 0 5px;
+  max-height: 350px;
+  overflow-y: auto;
+  max-width: 520px;
+}
+#hydra /deep/ .tlist ul {
+  padding: 5px !important;
+}
+#hydra /deep/ .tlist ul li {
+  color: #333;
+  font-size: 14px;
+  height: 34px;
+  line-height: 34px;
+  width: 100%;
+  list-style-type: none;
+  cursor: pointer;
+  padding: 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#hydra /deep/ .tlist ul li label {
+  cursor: pointer;
+}
+#hydra /deep/ .tlist ul li span {
+  float: left;
+  display: block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 3px;
+  color: #fff;
+  background: #4298c7;
+  margin: 5px 5px 0 0;
+}
+#hydra /deep/ .tlist ul li span:hover {
+  opacity: 0.9;
+}
+#hydra /deep/ .tlist ul li span.allStack {
+  width: 60px;
+  display: block;
+}
+#hydra /deep/ .tlist ul li span.filter-condition {
+  width: auto;
+  padding: 0 5px;
+  display: block;
+  margin: 5px 0 0 0;
+}
+#hydra /deep/ .tlist ul li:not(.li_allStack):hover {
+  background: #e5e5e5;
+}
+#hydra .panel {
+  position: absolute;
+  left: 10px;
+  top: 88px;
+  z-index: 999;
+  font-size: 16px;
+  background: #fff;
+  -webkit-box-shadow: #ccc 0px 0px 8px;
+  box-shadow: #ccc 0px 0px 8px;
+  padding: 10px;
+  max-width: 600px;
+  max-height: 450px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  color: #333;
+}
+#hydra .titleBox {
+  position: absolute;
+  z-index: 999;
+  background: #fff;
+  box-shadow: #ccc 0px 0px 8px;
+  padding: 5px;
+  font-size: 16px;
+}

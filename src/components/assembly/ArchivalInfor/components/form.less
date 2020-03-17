@@ -1,0 +1,246 @@
+.form-objective-view {
+  position: absolute;
+  padding: 10px 15px 10px 25px;
+  top: 44px;
+  height: calc(100% - 56px);
+  width: 100%;
+  overflow-y: auto;
+  color: #666;
+}
+
+/deep/ .form-item {
+  margin-bottom: 12px;
+  padding-top: 4px;
+  display: flex;
+  // align-items: baseline;
+
+  .form-label {
+    color: #dddddd;
+    font-size: 14px;
+    padding: 2px 12px 10px 0;
+    width: 120px;
+    text-align: right;
+    line-height: 1;
+    display: inline-block;
+    flex: 0 0 120px;
+  }
+
+  .person-form-label {
+    padding: 0;
+    display: inline-flex;
+  }
+
+  .form-content {
+    color: #eee;
+    font-size: 14px;
+    // display: inline-block;
+    word-break: break-word;
+
+    i.color {
+      display: block;
+      text-align: center;
+      font-style: normal;
+      color: #fff;
+      width: 130px;
+    }
+  }
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+
+  .avator-image {
+    width: 120px;
+    height: calc(165 * 120px / 137);
+    // width: 137px;
+    // height: 165px;
+    // background: #ddd;
+    // margin-left: 20px;
+    // border-top: 1px solid #ddd;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 137px;
+      height: 165px;
+      display: inline-block;
+      transform: scale(0.72);
+    }
+  }
+
+  .profile {
+    >div {
+      padding-bottom: 4px;
+    }
+
+    .risk-anjian-group {
+      span {
+        display: inline-block;
+        padding: 2px 6px;
+        text-align: center;
+        border-radius: 2px;
+        border: 1px solid red;
+        min-width: 90px;
+        margin-right: 5px;
+        cursor: default;
+      }
+
+      .risk {
+        color: #ffffff;
+      }
+
+      .anjian {
+        color: #d74348;
+        border: 1px solid #d74348;
+      }
+
+      .line {
+        color: #4264d7;
+        border: 1px solid #4264d7;
+      }
+    }
+
+    .gender {
+      margin-right: 15px;
+    }
+  }
+}
+
+.person-label {
+  display: inline-flex;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  flex-wrap: wrap;
+
+  .labels {
+    width: 30%;
+    margin: 0 10px 5px 0;
+
+    span {
+      width: 100%;
+      display: inline-block;
+      border-radius: 4px;
+      padding: 2px 3px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      cursor: default;
+    }
+  }
+}
+
+.personState {
+  padding: 2px 12px;
+  border-radius: 3px;
+  color: #eeeeee;
+}
+
+.iveOneProperty {
+  font-size: 24px;
+}
+
+.border {
+  border-left: 4px solid #3a8bbf;
+  text-align: left;
+}
+
+.panel-title {
+  padding: 0 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+  color: #0090ea;
+  height: 21px;
+  font-size: 16px;
+}
+
+.tip {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/deep/ .risk-table {
+  .sub-item>div {
+    min-width: 0;
+    min-height: 35px;
+    box-sizing: border-box;
+    text-align: left;
+    text-overflow: ellipsis;
+    vertical-align: middle;    
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    padding-right: 18px; 
+    justify-content: space-between;  
+    &:not(:last-child) {
+      border-bottom: 1px solid #e8eaec;
+    }
+    > span:first-child {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    } 
+      
+  }
+  .sub-item > div.sameContract{
+    align-items: center;
+    height: 46px;
+    justify-content: center;
+    cursor: pointer;
+    .left{
+      padding-right: 20px;
+    }
+  }
+  .sub-item > div.sameMap{
+    .left{
+      padding-right: 20px;
+      text-decoration: underline;
+    }
+    &:hover{      
+      cursor: pointer;
+    }
+  }
+
+  .ivu-table td,
+  .ivu-table th {
+    height: 35px;
+  }
+
+  td.sub-column {
+    .ivu-table-cell {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+/deep/ .risk-table-box{
+  max-height: 280px;
+  overflow-y: auto;
+}
+.caseline-class {
+  border-left: 1px dashed rgb(204, 204, 204);
+  border-right: 1px dashed rgb(204, 204, 204);
+  border-bottom: 1px dashed rgb(204, 204, 204);
+  border-radius: 2px;
+  margin-bottom: 15px;
+  .title{
+    text-align: center;
+    background: rgb(230, 232, 236);
+    padding: 4px;
+  }
+  .content{
+    display: flex;
+    padding: 6px;
+    .labels{
+      border: 1px solid rgb(204, 204, 204);
+      border-radius: 2px;
+      margin: 6px;
+      padding: 2px 6px;
+    }
+  }  
+}

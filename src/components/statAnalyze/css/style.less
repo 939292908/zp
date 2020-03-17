@@ -1,0 +1,347 @@
+.collection-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  .collection-content {
+    height: calc(100% - 68px);
+    position: absolute;
+    top: 68px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    font-size: 14px;
+
+    /deep/ .right-content {
+      flex: auto;
+      padding: 10px;
+      border-left: 1px solid #dddddd;
+      background: #f7f7f7;
+      width: 100%;
+      overflow: hidden;
+      height: 100%;
+      .actions-button {
+        margin-bottom: 15px;
+
+        button:not(:first-child) {
+          margin-left: 10px;
+        }
+      }
+
+      .content-panel {
+
+        i.remark {
+          font-size: 14px;
+          font-weight: normal;
+          font-style: normal;
+        }
+
+        .tp-box {
+          height: 326px;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          width: calc(100% - 10px);
+
+          .box-header {
+            height: 56px;
+            line-height: 56px;
+            padding-left: 20px;
+            font-weight: bold;
+            font-size: 16px;
+          }
+
+          .tp-list {
+            position: relative;
+            width: 49.5%;
+            border: 1px solid #E0E3E6;
+            background-color: #fff;
+            height: 100%;
+          }
+
+          .stat-content {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+          }
+        }
+
+        .panel-box.stat-box {
+          height: 360px;
+        }
+
+        .panel-title {
+          color: #333333;
+          font-size: 16px;
+          font-weight: 700;
+
+          span {
+            margin-left: 10px;
+            line-height: 36px;
+          }
+        }
+
+        .panel-echart {
+          width: 100%;
+          height: calc(100% - 26px);
+          position: absolute;
+          top: 26px;
+          left: 0;
+        }
+
+        .panel-box {
+          padding: 10px;
+          margin-bottom: 20px;
+          border: 1px solid #E0E3E6;
+          width: calc(100% - 10px);
+          background-color: #fff;
+          position: relative;
+
+          .table-title {
+            height: 36px;
+            width: 100%;
+            color: #333333;
+
+            .title {
+              font-size: 16px;
+              font-weight: bold;
+              line-height: 36px;
+              margin-left: 10px;
+            }
+          }
+
+          .table-box.login-table {
+            margin-top: 0;
+          }
+
+          .table-box {
+            width: 100%;
+            padding: 10px;
+            margin-top: -43px;
+
+            /deep/.ivu-table-overflowY {
+              overflow-x: hidden;
+            }
+          }
+
+          #lineCharts,
+          #barCharts {
+            width: 100%;
+            height: 500px;
+            margin-top: 15px;
+          }
+
+          .timing-btns {
+            position: absolute;
+            right: 30px;
+            top: 15px;
+          }
+
+          .chartsInfo {
+            position: absolute;
+            left: 30px;
+            top: 15px;
+          }
+        }
+      }
+
+      .actions-search {
+        margin-bottom: 15px;
+
+        .search-row {
+          display: flex;
+          align-items: center;
+          padding: 10px 4px;
+
+          .search-label {
+            flex: 0 0 100px;
+          }
+
+          .search-control {
+            flex: auto;
+
+            .ivu-checkbox-wrapper {
+              font-size: inherit;
+            }
+
+            .dept-dropdown {
+              width: 400px;
+            }
+
+            .search-input-dept {
+              width: 100%;
+            }
+
+            .transfer-select-dropdown {
+              padding: 0px 10px;
+              max-height: 200px;
+              overflow-y: auto;
+              min-height: 100px;
+            }
+          }
+        }
+      }
+
+      .action-search-input {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+    }
+
+    /deep/ .right-content-box {
+      overflow-y: auto;
+      height: 100%;
+
+      .mapManagemen-header {
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+          font-size: 22px;
+          color: #424A57;
+          margin-top: -15px;
+        }
+      }
+
+      .condition-box {
+        margin-bottom: 10px;
+
+        .search-row {
+          display: flex;
+          align-items: center;
+          padding-bottom: 15px;
+
+          span.line {
+            color: #bbb;
+            padding-right: 15px;
+          }
+
+          .search-label {
+            flex: 0 0 90px;
+          }
+
+          .search-control {
+            flex: none;
+
+            .ivu-checkbox-wrapper {
+              font-size: inherit;
+            }
+
+            .ivu-radio-wrapper {
+              margin-right: 25px;
+            }
+
+            .dept-dropdown {
+              // width: 300px;
+            }
+
+            .search-input-dept {
+              width: 100%;
+            }
+
+            .transfer-select-dropdown {
+              padding: 0px 10px;
+              max-height: 200px;
+              overflow-y: auto;
+              min-height: 100px;
+            }
+          }
+        }
+
+        .search-row.time {
+          .ivu-radio-wrapper {
+            margin-right: 15px;
+          }
+
+          /deep/ .ivu-radio-wrapper {
+            font-size: inherit;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 0 5px;
+            font-size: 13px;
+            background-color: #fff;
+          }
+
+          /deep/.ivu-radio-wrapper {
+            padding: 3px 5px;
+          }
+
+          /deep/.ivu-radio {
+            display: none;
+          }
+
+          /deep/ .ivu-radio-wrapper.ivu-radio-group-item.ivu-radio-wrapper-checked.ivu-radio-default {
+            background-color: #0668c8;
+            color: #fff;
+          }
+        }
+      }
+
+      .mapManagemen-content {
+        background-color: #fff;
+        padding: 15px;
+        border: 1px solid #E0E3E6;
+
+        .con-header {
+          height: 40px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .tpList {
+            font-size: 16px;
+            font-weight: bold;
+          }
+
+        }
+      }
+
+      .actions-button.right {
+        text-align: right;
+      }
+
+      .ivu-tabs-bar {
+        margin-bottom: 0;
+      }
+
+      .ivu-btn {
+        margin-left: 10px;
+      }
+
+      .ivu-tabs-no-animation>.ivu-tabs-content {
+        margin-bottom: 2px;
+      }
+
+      .ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-tab-active {
+        background: #2d8cf0;
+        color: #ffffff;
+      }
+
+      // loading
+      .archives-loading-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 99999;
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      .archives-loading-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 99999;
+        background: rgba(0, 0, 0, .5);
+      }
+    }
+
+  }
+}

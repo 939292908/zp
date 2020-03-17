@@ -1,0 +1,299 @@
+.collection-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  .collection-content {
+    height: calc(100% - 68px);
+    position: absolute;
+    top: 68px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    font-size: 14px;
+
+    /deep/ .right-content {
+      flex: auto;
+      padding: 10px;
+      border-left: 1px solid #dddddd;
+      background: #f7f7f7;
+      width: 100%;
+      overflow: hidden;
+
+      .actions-button {
+        margin-bottom: 15px;
+
+        button:not(:first-child) {
+          margin-left: 10px;
+        }
+      }
+
+      .content-panel {
+
+        .panel-title {
+          color: #333333;
+          font-size: 16px;
+          font-weight: 700;
+          position: absolute;
+          left: 30px;
+          top: 15px;
+        }
+
+        .tp-box {
+          height: 282px;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          width: calc(100% - 10px);
+
+          .box-header {
+            height: 50px;
+          }
+
+          .tp-list,
+          .workbench {
+            width: 49.5%;
+            padding: 30px;
+            border: 1px solid #E0E3E6;
+            background-color: #fff;
+          }
+
+          .workbench {
+            position: relative;
+
+            .actions-button {
+              position: absolute;
+              right: 30px;
+              top: 30px;
+            }
+
+            .tp-status {
+              .status-item.audit {
+                color: #347ceb;
+              }
+
+              .status-item.back {
+                color: #d85451;
+              }
+
+              .status-item.pass {
+                color: #38a837;
+              }
+
+              .status-item {
+                width: 112px;
+                height: 151px;
+                border: 1px solid #bbb;
+                padding: 20px;
+                font-size: 13px;
+                color: #333333;
+                position: relative;
+                float: left;
+                margin-right: 20px;
+                cursor: pointer;
+                overflow: hidden;
+
+                .status-item-count {
+                  font-size: 36px;
+                  line-height: 2;
+                  font-weight: 700;
+                  font-family: Arial;
+                }
+
+                .icon {
+                  font-size: 42px;
+                  color: #ebebeb;
+                  position: absolute;
+                  right: 0px;
+                  bottom: -15px;
+                  transform: rotate(340deg);
+                }
+              }
+            }
+          }
+
+          .tp-list {
+            position: relative;
+
+            .tp-item {
+              display: inline-block;
+              display: inline-flex;
+              justify-content: center;
+              flex-direction: column;
+              text-align: center;
+              padding: 10px 4px;
+              border-radius: 3px;
+              width: 72px;
+              height: 72px;
+              color: #ffffff;
+              font-size: 14px;
+              margin: 0 20px 20px 0;
+              cursor: pointer;
+
+              .tp-item-count {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 22px;
+                font-weight: 700;
+                font-family: Arial
+              }
+            }
+          }
+        }
+
+        .panel-box {
+          padding: 10px;
+          display: flex;
+          margin-bottom: 20px;
+          border: 1px solid #E0E3E6;
+          width: calc(100% - 10px);
+          position: relative;
+          background-color: #fff;
+
+          #lineCharts,
+          #barCharts {
+            width: 100%;
+            height: 500px;
+            margin-top: 15px;
+          }
+
+          .timing-btns {
+            position: absolute;
+            right: 30px;
+            top: 15px;
+          }
+
+          .chartsInfo {
+            position: absolute;
+            left: 30px;
+            top: 15px;
+          }
+        }
+      }
+
+      .actions-search {
+        margin-bottom: 15px;
+
+        .search-row {
+          display: flex;
+          align-items: center;
+          padding: 10px 4px;
+
+          .search-label {
+            flex: 0 0 100px;
+          }
+
+          .search-control {
+            flex: auto;
+
+            .ivu-checkbox-wrapper {
+              font-size: inherit;
+            }
+
+            .dept-dropdown {
+              width: 400px;
+            }
+
+            .search-input-dept {
+              width: 100%;
+            }
+
+            .transfer-select-dropdown {
+              padding: 0px 10px;
+              max-height: 200px;
+              overflow-y: auto;
+              min-height: 100px;
+            }
+          }
+        }
+      }
+
+      .action-search-input {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+    }
+
+    /deep/ .right-content-box {
+      overflow-y: auto;
+      height: 100%;
+
+      .mapManagemen-header {
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+          font-size: 22px;
+          color: #424A57;
+          margin-top: -15px;
+        }
+      }
+
+      .mapManagemen-content {
+        background-color: #fff;
+        padding: 15px;
+        border: 1px solid #E0E3E6;
+
+        .con-header {
+          height: 40px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .tpList {
+            font-size: 16px;
+            font-weight: bold;
+          }
+
+        }
+      }
+
+      .actions-button.right {
+        text-align: right;
+      }
+
+      .ivu-tabs-bar {
+        margin-bottom: 0;
+      }
+
+      .ivu-btn {
+        margin-left: 10px;
+      }
+
+      .ivu-tabs-no-animation>.ivu-tabs-content {
+        margin-bottom: 2px;
+      }
+
+      .ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-tab-active {
+        background: #2d8cf0;
+        color: #ffffff;
+      }
+
+      // loading
+      .archives-loading-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 99999;
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      .archives-loading-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 99999;
+        background: rgba(0, 0, 0, .5);
+      }
+    }
+
+  }
+}

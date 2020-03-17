@@ -1,0 +1,252 @@
+// @color 字体颜色
+// @lgColor 线性渐变色
+// @bgColor 背景色
+// @hoverBgColor 选中色
+// @boxShadowColor 阴影色
+// @imagePrefix 图片后缀
+.theme(@color:#3aa8fb,
+       @fcolor:#ffffff,
+       @fbcolor:#2698ED,
+       @fscolor:#2698ED,
+       @dcolor:#6280c7,
+       @lgColor:#74c2ff,
+       @bgColor:rgba(4,28,91,.99),
+       @borderColor:#254b81,
+       @inputBorderColor:transparent,
+       @hebgColor:transparent,
+       @hlbgColor:#ffffff,
+       @hoverBgColor:#264496,
+       @hBgColor:#264496,
+       @boxShadowColor:rgba(40, 71, 117, 0.4),
+       @imagePrefix:"",
+       @display:block){
+  @imageUrl:'../../../';
+  header{
+    background:@hebgColor;
+    .logo{
+      // background:url('@{imageUrl}static/images/logo-bg.png') 0 0 no-repeat;
+      .nav{
+        color:@dcolor !important;
+      }
+    }
+    .result-search-box{
+      .search-btn{
+        background: linear-gradient(0deg,@color,@hBgColor) !important;
+      }
+      .input{
+        input{
+          color: @color !important;
+          border: 1px solid @inputBorderColor !important;
+        }
+      }
+    } 
+  }
+  .index .charts-box .title-name {
+    color: @color !important;
+  }
+  .r_btn .btn span:nth-child(2) {
+    background: -webkit-linear-gradient(top, @hlbgColor, @lgColor) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+  .r_btn .btn{
+    background:url('@{imageUrl}static/images/check-two@{imagePrefix}.png') 0 0 no-repeat !important;
+    background-size: 100% 100% !important; 
+  }
+  .r_btn .current{
+    background:url('@{imageUrl}static/images/checked-two@{imagePrefix}.png') 0 0 no-repeat !important;
+    background-size: 100% 100% !important; 
+  }
+  .personModal{
+    ul li:nth-child(1){
+      background: @hBgColor !important;
+      span{
+        color: @color !important;
+      }
+    }
+  }
+  .personModal, .newsModal{
+    background: @bgColor !important;
+    box-shadow: 0px 7px 20px 0px @boxShadowColor !important;
+    border: none !important;    
+    ul li span{
+      color: @color !important;
+    }
+    ul li:hover:not(.head){
+      background: @hoverBgColor !important;
+    }
+    .modal-top{
+      display: @display !important;
+    }
+  }
+  .app-list{
+    background: @bgColor !important;
+    box-shadow: 0px 7px 20px 0px @boxShadowColor !important;
+    .sidebar-top{
+      .polygon{
+        display: @display !important;
+      }
+    }
+    .sidebar-bottom{
+      .polygon{
+        display: @display !important;
+      }
+    }
+    .close-btn{
+      background: url('@{imageUrl}static/images/app/sidebar-center@{imagePrefix}.png') 0 0 no-repeat  !important;
+      background-size:100% 100%  !important;
+    }
+    .cont-box {
+      ul li p{
+        color: @color !important;
+      }
+    }
+  }
+  .archives-box{
+    .div_cont{
+      background:@bgColor !important;
+      border:1px solid @borderColor !important;
+      box-shadow:0px 0px 10px 0px @boxShadowColor !important;
+      .header_p{
+        border-bottom: 1px dashed @borderColor;
+        .name{
+          color: @fcolor !important;
+        }
+      }
+      .div_imgcont{
+        .span_cor2{
+          color: @fscolor !important;
+        }
+        .span_cor{
+          color: @fcolor !important;
+        }
+      }
+      .p_title{
+        border-top: 1px solid @borderColor !important;
+        .span_tag,.span_ptitle{
+          color: @fbcolor !important;
+        }
+        .bgcolor,.ta_bg{
+          background: @borderColor !important;
+        }
+        .bgcolor2{
+          background: @borderColor !important;
+        }
+      }
+      .tp-list-box{
+        background: @hBgColor !important;
+      }
+    }
+  }
+  .main_cont{
+    .row-title{
+      span{
+        color: @fcolor !important;
+      }      
+    }
+  }
+  .result-cont {
+    .result-cont-title{
+      span{
+        color: @fcolor !important;
+      }
+    }
+  }
+  .inforModal,.history{
+    .inforModal-sidebar{
+      .sidebar-top{
+        display: @display !important;
+      }
+      .sidebar-bottom{
+        display: @display !important;
+      }
+      .close-btn{
+				background: url('@{imageUrl}static/images/close-btn@{imagePrefix}.png') 0 0 no-repeat !important;
+				background-size:100% 100% !important;
+			}
+    }
+    .cont-box{
+      .grid-box{
+        .head-left{
+          display: @display !important;
+        }
+        .infor-details{
+          .person-label {
+            .border-bottom {
+              background: @borderColor !important;
+            }
+          }
+          .basic-infor{
+            .basic-infor-list{
+              border-bottom: 1px solid @borderColor !important;
+            }
+          } 
+          .association-analysis{
+            .type-list{
+              border-bottom: 1px solid @borderColor !important;
+              .relation-person span:nth-child(1){
+                color: @fscolor !important;
+              }
+              .relation-person span:nth-child(2){
+                color: @hBgColor !important;
+              }
+              .head{
+                border: solid 1px @borderColor !important;
+                background: @borderColor !important;
+                .iconfont{
+                  color: @fscolor !important;
+                }
+              }
+            }
+            .ivu-tabs-tab{
+              color: @fscolor !important;
+            }
+          }
+          .activity-trajectory {
+            .trajectory{
+              border-bottom: 1px solid @borderColor !important;
+            }
+            .ivu-tabs-tab{
+              color: @fscolor !important;
+            }
+          }
+        } 
+      }
+    }
+  }
+  .message-list,.guidelines{
+    .sidebar-top{
+      display: @display !important;
+    }
+    .sidebar-bottom{
+      display: @display !important;
+    }
+    .close-btn{
+      background: url('@{imageUrl}static/images/close-btn@{imagePrefix}.png') 0 0 no-repeat !important;
+      background-size:100% 100% !important;
+    }
+  }
+  .ivu-modal{
+    .modal-top-bg{
+      border-top-right-radius: 4px;
+      right: -1px !important;
+    }
+    .footer{
+      button{
+        background:url('@{imageUrl}static/images/modal-btn@{imagePrefix}.png') 0 0 no-repeat !important;
+        background-size: 100% 100% !important;
+        border-color: transparent !important;
+      }
+      button:hover,button:focus,button:active{
+        border-color: transparent !important;
+        box-shadow: none !important;
+      }
+    }
+  }
+  .feedback{
+    input{
+      background:url('@{imageUrl}static/images/modal-btn@{imagePrefix}.png') 0 0 no-repeat !important;
+      background-size: 100% 100% !important;
+    }
+  }  
+}
